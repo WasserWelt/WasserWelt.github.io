@@ -791,7 +791,7 @@ button {
     --color-site-footer: rgba(170,170,170,0.871);
     --color-card: #262626;
     --color-text: rgba(238,238,238,0.871);
-    --color-block: #434343;
+    --color-block: #222f3f;
     --color-codeblock: #1f1f1f;
     --color-inlinecode: #95adbe;
     --color-h1: rgba(255,255,255,0.871);
@@ -863,7 +863,7 @@ button {
   --color-site-footer: rgba(170,170,170,0.871);
   --color-card: #262626;
   --color-text: rgba(238,238,238,0.871);
-  --color-block: #434343;
+  --color-block: #222f3f;
   --color-codeblock: #1f1f1f;
   --color-inlinecode: #95adbe;
   --color-h1: rgba(255,255,255,0.871);
