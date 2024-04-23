@@ -45,7 +45,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2023-05-10T12:30:03.000Z">
-<meta property="article:modified_time" content="2023-05-20T16:51:28.581Z">
+<meta property="article:modified_time" content="2024-04-23T09:45:04.466Z">
 <meta property="article:author" content="WasserWelt">
 <meta property="article:tag" content="记录">
 <meta name="twitter:card" content="summary">
@@ -2275,7 +2275,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: "env",
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1685113178509),
+    lastupdate: new Date(1713868026482),
     cdn: {
       izitoast_css: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/css/iziToast.min.css',
       izitoast_js: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/js/iziToast.min.js',
@@ -2921,7 +2921,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <div class="new-meta-item wordcount">
     <a class='notlink'>
       <i class="fa-solid fa-keyboard fa-fw" aria-hidden="true"></i>
-      <p>字数：583 字</p>
+      <p>字数：661 字</p>
     </a>
   </div>
   <div class="new-meta-item readtime">
@@ -2961,14 +2961,16 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <li>下载主题</li>
 </ul>
 <h2 id="配置主题"><a class="markdownIt-Anchor" href="#配置主题"></a> 配置主题</h2>
-<p>我使用的主题是<code>Volantis</code>，相对简介的同时又高度可自定义化。也曾经想过用<code>NexT</code>这个非常简约黑白风的主题，不过还是选了目前这个。</p>
+<p>我使用的主题是 <code>Volantis</code>，相对简介的同时又高度可自定义化。也曾经想过用 <code>NexT</code>这个非常简约黑白风的主题，不过还是选了目前这个。</p>
+<p>一般post的 <code>front-matter</code>，包括这些内容</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">title: 这是标题</span><br><span class="line">date: &#123;&#123; date &#125;&#125;</span><br><span class="line">archive: false</span><br><span class="line">pin: false</span><br><span class="line">tags: </span><br><span class="line">- tagA</span><br><span class="line">- tagB</span><br><span class="line">category: </span><br><span class="line">- 第一层级</span><br><span class="line">- 第二层级</span><br><span class="line">excerpt: 预览</span><br><span class="line"></span><br><span class="line">katex: false</span><br><span class="line">comments: true</span><br><span class="line">toc: true</span><br><span class="line">top: false</span><br><span class="line">typora-root-url: &#123;&#123; title &#125;&#125;</span><br><span class="line"></span><br><span class="line">references: </span><br><span class="line">- title: 引用说明</span><br><span class="line">  url: 引用链接</span><br></pre></td></tr></table></figure>
 <h3 id="图片相关"><a class="markdownIt-Anchor" href="#图片相关"></a> 图片相关</h3>
 <h4 id="设置hexo和typora和使文章可以简单引用图片"><a class="markdownIt-Anchor" href="#设置hexo和typora和使文章可以简单引用图片"></a> 设置Hexo和Typora和使文章可以简单引用图片</h4>
 <p>参考：<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/265077468">https://zhuanlan.zhihu.com/p/265077468</a></p>
 <p>对于图片资源管理，我更喜欢一个文章一个目录。在写文章的时候，更习惯于直接复制，然后通过Typora的偏好设置存到到同名文件夹里面。所以，首先要做的是修改配置文件：</p>
 <figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># _config.yml</span></span><br><span class="line"><span class="attr">post_asset_folder:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
-<p>但是这会导致一个问题，Hexo的渲染器和一般的Markdown在这种情况下，解析图片的路径会不同。例如，使用<code>hexo new</code>命令新建<code>my_post.md</code>，同时创建了<code>root/source/_posts/my_post</code>的存放图片的文件夹，理论上Markdown引用图片的路径要写<code>my_post/picture.jpg</code>，但是Hexo接受的是<code>picture.jpg</code>，这样就不能在Typora里面渲染出来了。</p>
-<p>为了达到可渲染+直接粘贴的功能，需要修改<code>root/scaffolds/post.md</code>的<code>front-matter</code>，增加一行：</p>
+<p>但是这会导致一个问题，Hexo的渲染器和一般的Markdown在这种情况下，解析图片的路径会不同。例如，使用 <code>hexo new</code>命令新建 <code>my_post.md</code>，同时创建了 <code>root/source/_posts/my_post</code>的存放图片的文件夹，理论上Markdown引用图片的路径要写 <code>my_post/picture.jpg</code>，但是Hexo接受的是 <code>picture.jpg</code>，这样就不能在Typora里面渲染出来了。</p>
+<p>为了达到可渲染+直接粘贴的功能，需要修改 <code>root/scaffolds/post.md</code>的 <code>front-matter</code>，增加一行：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">typora-root-url: &#123;&#123; title &#125;&#125;</span><br></pre></td></tr></table></figure>
 <p>至此，我们就可以愉快地插入图片了！</p>
 <h4 id="网站图标"><a class="markdownIt-Anchor" href="#网站图标"></a> 网站图标</h4>
@@ -3035,6 +3037,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <h3 id="自定义插件"><a class="markdownIt-Anchor" href="#自定义插件"></a> 自定义插件</h3>
 <h4 id="katex"><a class="markdownIt-Anchor" href="#katex"></a> KaTex</h4>
 <p><img src="/../%E9%85%8D%E7%BD%AE%E8%AE%B0%E5%BD%95/image-20230514000513202.png" class="lazyload" data-srcset="/../%E9%85%8D%E7%BD%AE%E8%AE%B0%E5%BD%95/image-20230514000513202.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20230514000513202" /></p>
+<p><a target="_blank" rel="noopener" href="https://blog.dearxuan.com/2023/01/07/Volantis%E9%AD%94%E6%94%B9%E6%95%99%E7%A8%8B/">https://blog.dearxuan.com/2023/01/07/Volantis魔改教程/</a></p>
 <p><a target="_blank" rel="noopener" href="https://www.micdz.cn/article/katex-on-volantis/">https://www.micdz.cn/article/katex-on-volantis/</a></p>
 <p>参考本文修改完成</p>
 <h2 id="额外功能"><a class="markdownIt-Anchor" href="#额外功能"></a> 额外功能</h2>
@@ -3082,10 +3085,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-05-21T00:51:28+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2024-04-23T17:45:04+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：2023年5月21日</p>
+    <p>更新于：2024年4月23日</p>
   </a>
 </div>
 
@@ -3160,7 +3163,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <div class="new-meta-item wordcount">
     <a class='notlink'>
       <i class="fa-solid fa-keyboard fa-fw" aria-hidden="true"></i>
-      <p>字数：583 字</p>
+      <p>字数：661 字</p>
     </a>
   </div>
   <div class="new-meta-item readtime">
@@ -4120,7 +4123,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"WasserWelt","url":"https://WasserWelt.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"WasserWelt","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://WasserWelt.github.io/","sameAs":["https://github.com/volantis-x"],"description":"水就完事了"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://WasserWelt.github.io/","name":"WasserWelt"}},{"@type":"ListItem","position":2,"item":{"@id":"https://WasserWelt.github.io/categories/杂谈/","name":"杂谈"}},{"@type":"ListItem","position":2,"item":{"@id":"https://WasserWelt.github.io/categories/杂谈/技术向/","name":"技术向"}},{"@type":"ListItem","position":3,"item":{"@id":"https://WasserWelt.github.io/2023/05/10/配置记录/","name":"Hexo&Volantis配置记录"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"WasserWelt","url":"https://WasserWelt.github.io/","keywords":null,"description":"水就完事了","author":{"@type":"Person","name":"WasserWelt","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://WasserWelt.github.io/","description":"水就完事了"},"publisher":{"@type":"Organization","name":"WasserWelt","url":"https://WasserWelt.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://WasserWelt.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"Hexo&Volantis配置记录","description":"【不断更新中】用Hexo+Volantis搭建一个个性化的博客页面","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://wasserwelt.github.io/2023/05/10/%E9%85%8D%E7%BD%AE%E8%AE%B0%E5%BD%95/"},"author":{"@type":"Person","name":"WasserWelt","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://WasserWelt.github.io/"},"publisher":{"@type":"Organization","name":"WasserWelt","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://wasserwelt.github.io/2023/05/10/%E9%85%8D%E7%BD%AE%E8%AE%B0%E5%BD%95/","wordCount":33,"datePublished":"2023-05-10T12:30:03.000Z","dateModified":"2023-05-20T16:51:28.581Z","articleSection":"杂谈","keywords":"记录","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"WasserWelt","url":"https://WasserWelt.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"WasserWelt","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://WasserWelt.github.io/","sameAs":["https://github.com/volantis-x"],"description":"水就完事了"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://WasserWelt.github.io/","name":"WasserWelt"}},{"@type":"ListItem","position":2,"item":{"@id":"https://WasserWelt.github.io/categories/杂谈/","name":"杂谈"}},{"@type":"ListItem","position":2,"item":{"@id":"https://WasserWelt.github.io/categories/杂谈/技术向/","name":"技术向"}},{"@type":"ListItem","position":3,"item":{"@id":"https://WasserWelt.github.io/2023/05/10/配置记录/","name":"Hexo&Volantis配置记录"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"WasserWelt","url":"https://WasserWelt.github.io/","keywords":null,"description":"水就完事了","author":{"@type":"Person","name":"WasserWelt","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://WasserWelt.github.io/","description":"水就完事了"},"publisher":{"@type":"Organization","name":"WasserWelt","url":"https://WasserWelt.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://WasserWelt.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"Hexo&Volantis配置记录","description":"【不断更新中】用Hexo+Volantis搭建一个个性化的博客页面","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://wasserwelt.github.io/2023/05/10/%E9%85%8D%E7%BD%AE%E8%AE%B0%E5%BD%95/"},"author":{"@type":"Person","name":"WasserWelt","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://WasserWelt.github.io/"},"publisher":{"@type":"Organization","name":"WasserWelt","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://wasserwelt.github.io/2023/05/10/%E9%85%8D%E7%BD%AE%E8%AE%B0%E5%BD%95/","wordCount":33,"datePublished":"2023-05-10T12:30:03.000Z","dateModified":"2024-04-23T09:45:04.466Z","articleSection":"杂谈","keywords":"记录","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
